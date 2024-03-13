@@ -1,0 +1,24 @@
+.side-menu {
+    width: 150px;
+    right: -150px;
+    transition: right 0.3s;
+}
+
+.side-menu.opened {
+    right: 0; 
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content.is-open {
+    display: block;
+}

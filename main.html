@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/сss/style.css">
+    <title>Головна сторінка - WorkHour Wizard</title>
+</head>
+<body class="bg-gray-100">
+    <div class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="flex items-center justify-between px-4 py-2">
+            <a href="main.html" class="text-lg font-semibold text-indigo-700">WorkHour <span class="text-gray-800">Wizard</span></a>
+            <div class="flex items-center">
+                <nav class="hidden md:flex space-x-4">
+                    <a href="main.html" class="text-gray-600 hover:text-gray-800">Головна</a>
+                    <a href="about-us.html" class="text-gray-600 hover:text-gray-800">Про нас</a>
+                    <a href="index.html" class="text-indigo-700 hover:text-indigo-900">Вийти</a>
+                </nav>
+                <div class="ml-4 mr-4">
+                    <a href="profile.html">
+                        <img src="assets/images/avatar.svg" alt="User Avatar" class="w-8 h-8 rounded-full">
+                    </a>
+                </div>
+                <button id="burger-menu" class="md:hidden block focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="side-menu" class="side-menu bg-white fixed top-0 bottom-0 z-50 shadow-md">
+        <button id="close-btn" class="close-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <nav class="flex flex-col items-end p-4 mt-10">
+            <a href="main.html" class="text-gray-600 hover:text-gray-800">Головна</a>
+            <a href="profile.html" class="text-gray-600 hover:text-gray-800">Профіль</a>
+            <a href="about-us.html" class="text-gray-600 hover:text-gray-800">Про нас</a>
+            <a href="index.html" class="text-indigo-700 hover:text-indigo-900">Вийти</a>
+        </nav>
+    </div>
+    <div class="container mx-auto mt-20 flex flex-col items-center">
+        <div class="text-7xl mb-8">00:00:00</div>
+        <div class="flex gap-4 mb-8">
+            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+                <i class="fas fa-stop"></i>
+            </button>
+            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="w-full md:w-1/2 mx-auto max-w-screen-lg p-2 mb-20">
+            <h2 class="text-2xl mb-4">Попередні задачі:</h2>
+            <ul class="w-full md:w-90">
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 1</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
+                    </div>
+                </li>
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 2</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
+                    </div>
+                </li>
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 3</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
+                    </div>
+                </li>
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 4</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
+                    </div>
+                </li>
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 5</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
+                    </div>
+                </li>
+                <li class="accordion-item mb-2">
+                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
+                        <span class="task-name">Task 6</span>
+                        <span class="ml-4">+</span>
+                    </button>
+                    <div class="accordion-content p-2 bg-gray-100 hidden">
+                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
+                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="bg-indigo-700 py-4 text-white text-center">
+        <p>Copyright © 2024 WorkHour Wizard</p>
+    </footer>
+      
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

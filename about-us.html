@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/сss/style.css">
+    <title>Про нас - WorkHour Wizard</title>
+</head>
+<body class="bg-gray-100">
+    <div class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="flex items-center justify-between px-4 py-2">
+            <a href="main.html" class="text-lg font-semibold text-indigo-700">WorkHour <span class="text-gray-800">Wizard</span></a>
+            <div class="flex items-center">
+                <nav class="hidden md:flex space-x-4">
+                    <a href="main.html" class="text-gray-600 hover:text-gray-800">Головна</a>
+                    <a href="about-us.html" class="text-gray-600 hover:text-gray-800">Про нас</a>
+                    <a href="index.html" class="text-indigo-700 hover:text-indigo-900">Вийти</a>
+                </nav>
+                <div class="ml-4 mr-4">
+                    <a href="profile.html">
+                        <img src="assets/images/avatar.svg" alt="User Avatar" class="w-8 h-8 rounded-full">
+                    </a>
+                </div>
+                <button id="burger-menu" class="md:hidden block focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="side-menu" class="side-menu bg-white fixed top-0 bottom-0 z-50 shadow-md">
+        <button id="close-btn" class="close-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <nav class="flex flex-col items-end p-4 mt-10">
+            <a href="main.html" class="text-gray-600 hover:text-gray-800">Головна</a>
+            <a href="profile.html" class="text-gray-600 hover:text-gray-800">Профіль</a>
+            <a href="about-us.html" class="text-gray-600 hover:text-gray-800">Про нас</a>
+            <a href="index.html" class="text-indigo-700 hover:text-indigo-900">Вийти</a>
+        </nav>
+    </div>
+    <div class="mt-16">
+        <div class="bg-gray-100 py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl">
+                    Про <span class="text-indigo-700">WorkHour</span> <span class="text-gray-500">Wizard</span>
+                    </h1>
+                    <p class="mt-8 text-lg leading-6 text-gray-700">
+                        Компанія WorkHour Wizard створена для того, щоб допомагати користувачам відстежувати та керувати своїм часом ефективніше. Ми розробили застосунок, який дозволяє легко фіксувати витрачений час на різні завдання, проекти або клієнтів. Наша мета - забезпечити зручний інструмент для управління часом, який дозволить вам більш ефективно планувати свій робочий день, відстежувати прогрес у завданнях і досягати поставлених цілей. Ми розуміємо, наскільки важливим є керування часом в сучасному світі, тому працюємо над тим, щоб наш застосунок був якісним і корисним для кожного користувача.
+                    </p>
+                </div>
+                <div class="mt-20 max-w-2xl mx-auto grid gap-16 lg:grid-cols-2 lg:max-w-none">
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>                       
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900">Легко відстежувати час</h3>
+                            <p class="mt-2 text-base text-gray-700">
+                                Записуйте час, витрачений на різні завдання, проекти та клієнтів, за допомогою зручного та інтуїтивного інтерфейсу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900">Планувати та організувати</h3>
+                            <p class="mt-2 text-base text-gray-700">
+                                Створюйте завдання, встановлюйте нагадування та календарі, щоб організувати свій день і залишатися в курсі ваших дедлайнів.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900">Підвищити продуктивність</h3>
+                            <p class="mt-2 text-base text-gray-700">
+                                WorkHour Wizard допоможе вам краще зосередитися, позбутися відволікаючих факторів і зробити більше за менший час
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900">Простота у використанні</h3>
+                            <p class="mt-2 text-base text-gray-700">
+                                Інтуїтивно зрозумілий інтерфейс робить WorkHour Wizard доступним для кожного, незалежно від його технічного досвіду
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                         
+    </div>
+    <footer class="bg-indigo-700 py-4 text-white text-center">
+        <p>Copyright © 2024 WorkHour Wizard</p>
+    </footer> 
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
