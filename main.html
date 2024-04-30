@@ -46,84 +46,25 @@
         </nav>
     </div>
     <div class="container mx-auto mt-20 flex flex-col items-center">
-        <div class="text-7xl mb-8">00:00:00</div>
+        <div id="timer" class="text-7xl mb-8">00:00:00</div>
         <div class="flex gap-4 mb-8">
-            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+            <button id="start-btn" class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
                 <i class="fas fa-play"></i>
             </button>
-            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+            <button id="pause-btn" class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
                 <i class="fas fa-pause"></i>
             </button>
-            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+            <button id="stop-btn" class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
                 <i class="fas fa-stop"></i>
             </button>
-            <button class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
+            <button id="new-btn" class="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-4 rounded-full">
                 <i class="fas fa-plus"></i>
             </button>
         </div>
         <div class="w-full md:w-1/2 mx-auto max-w-screen-lg p-2 mb-20">
             <h2 class="text-2xl mb-4">Попередні задачі:</h2>
-            <ul class="w-full md:w-90">
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 1</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
-                    </div>
-                </li>
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 2</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
-                    </div>
-                </li>
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 3</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
-                    </div>
-                </li>
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 4</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
-                    </div>
-                </li>
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 5</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 01:30:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-13</p>
-                    </div>
-                </li>
-                <li class="accordion-item mb-2">
-                    <button class="accordion-button font-bold bg-gray-200 hover:bg-gray-300 py-2 px-8 rounded w-full text-left flex justify-between items-center">
-                        <span class="task-name">Task 6</span>
-                        <span class="ml-4">+</span>
-                    </button>
-                    <div class="accordion-content p-2 bg-gray-100 hidden">
-                        <p><span class="font-bold">Тривалість:</span> 02:45:00</p>
-                        <p><span class="font-bold">Дата:</span> 2024-03-12</p>
-                    </div>
-                </li>
+            <ul id="taskList" class="w-full md:w-90">
+                
             </ul>
         </div>
     </div>
@@ -132,6 +73,6 @@
     </footer>
       
     <!-- JAVASCRIPT -->
-    <script src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
 </body>
 </html>
