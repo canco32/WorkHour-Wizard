@@ -55,23 +55,24 @@
                 </div>                               
                 <div class="md:ml-4">
                     <h1 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Профіль користувача</h1>
-                    <p class="mt-1 text-gray-500 whitespace-nowrap">Ілля Сілін</p>
+                    <p id="username" class="mt-1 text-gray-500 whitespace-nowrap">Ілля Сілін</p>
                 </div>
             </div>            
-            <div class="md:pl-8 md:pr-8 md:pb-8 pt-2">
-                <p class="mt-2 text-gray-500">Дата народження: 02.03.2004</p>
-                <p class="mt-2 text-gray-500">Електронна пошта: ilyasilin32@gmail.com</p>
-                <p class="mt-2 text-gray-500">Стать: Чоловіча</p>
+            <div id="user-info" class="md:pl-8 md:pr-8 md:pb-8 pt-2">
+                <p id="birthdate" class="mt-2 text-gray-500">Дата народження: </p>
+                <p id="email" class="mt-2 text-gray-500">Електронна пошта: </p>
+                <p id="sex" class="mt-2 text-gray-500">Стать: </p>
                 <div class="mt-4 flex justify-center items-center">
                     <a href="main.html" class="text-lg font-semibold text-indigo-700">WorkHour <span class="text-gray-800">Wizard</span></a>
                 </div>            
-            </div>
+            </div>            
         </div>
     </div>
     <footer class="bg-indigo-700 py-4 text-white text-center">
         <p>Copyright © 2024 WorkHour Wizard</p>
     </footer>                   
     <!-- JAVASCRIPT -->
-    <script type="module" src="assets/js/index.js"></script>
+    <script src="assets/js/model/check-auth.js"></script>
+    <script src="assets/js/model/load-user-data.js"></script>
 </body>
 </html>
